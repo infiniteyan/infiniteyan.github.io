@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+<meta charset="utf-8">
+<title>GO并发：WaitGroup - 颜</title>
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<link rel="canonical" href="http://yoursite.com/post/GO并发：WaitGroup/">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="translucent">
+<meta name="description" content="如果你不关心并发操作的结果，或者有其他方式收集结果，那么WaitGroup是等待一组并发操作完成的好方法。如果这两个条件都不成立，我建议你改用channel和select语句。WaitGroup非常有用，我先介绍它，以便在后续章节中使用它。以下是使用WaitGroup等待goroutine完成的基本示例：123456789101112131415161718var wg sync.WaitGrou">
+<meta property="og:type" content="website">
+<meta property="og:title" content="GO并发：WaitGroup">
+<meta property="og:url" content="http://yoursite.com/post/GO并发：WaitGroup/index.html">
+<meta property="og:site_name" content="颜">
+<meta property="og:description" content="如果你不关心并发操作的结果，或者有其他方式收集结果，那么WaitGroup是等待一组并发操作完成的好方法。如果这两个条件都不成立，我建议你改用channel和select语句。WaitGroup非常有用，我先介绍它，以便在后续章节中使用它。以下是使用WaitGroup等待goroutine完成的基本示例：123456789101112131415161718var wg sync.WaitGrou">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://www.gravatar.com/avatar/28eb65472702b16068b3d26b1a929175?s=160">
+<meta property="og:updated_time" content="2019-04-04T10:07:47.856Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="GO并发：WaitGroup">
+<meta name="twitter:description" content="如果你不关心并发操作的结果，或者有其他方式收集结果，那么WaitGroup是等待一组并发操作完成的好方法。如果这两个条件都不成立，我建议你改用channel和select语句。WaitGroup非常有用，我先介绍它，以便在后续章节中使用它。以下是使用WaitGroup等待goroutine完成的基本示例：123456789101112131415161718var wg sync.WaitGrou">
+<meta name="twitter:image" content="https://www.gravatar.com/avatar/28eb65472702b16068b3d26b1a929175?s=160">
+<link rel="stylesheet" href="/fonts.b9b22ef890c930ac7a13.css">
+<link rel="stylesheet" href="/styles.942c2aa7be6bc74cfb59.css">
+<link rel="stylesheet" href="/theme.cfe159438b78edc19bbf.css">
+<script src="/config.b5c5bdf92ac03fa67772.js"></script>
+</head>
+<body>
+<is-d2a57d></is-d2a57d>
+<script src="/runtime.a5dd35324ddfd942bef1.js"></script>
+<script src="/polyfills.bd3fb034406e30e3b5dc.js"></script>
+<script src="/main.8f14c2dee0d43c5f5861.en.js"></script></body>
+</html>
