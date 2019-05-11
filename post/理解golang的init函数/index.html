@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+<meta charset="utf-8">
+<title>理解golang的init函数 - 颜</title>
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<link rel="canonical" href="http://yoursite.com/post/理解golang的init函数/">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="translucent">
+<meta name="description" content="大家都知道golang里的main函数是程序的入口函数，main函数返回后，程序也就结束了。golang还有另外一个特殊的函数init函数，先于main函数执行，实现包级别的一些初始化操作，今天我们就深入介绍下init的特性。 init函数的主要作用：1.初始化不能采用初始化表达式初始化的变量;2.程序运行前的注册;3.实现sync.Once功能;4.其他; init函数的主要特点：1.init函">
+<meta property="og:type" content="website">
+<meta property="og:title" content="理解golang的init函数">
+<meta property="og:url" content="http://yoursite.com/post/理解golang的init函数/index.html">
+<meta property="og:site_name" content="颜">
+<meta property="og:description" content="大家都知道golang里的main函数是程序的入口函数，main函数返回后，程序也就结束了。golang还有另外一个特殊的函数init函数，先于main函数执行，实现包级别的一些初始化操作，今天我们就深入介绍下init的特性。 init函数的主要作用：1.初始化不能采用初始化表达式初始化的变量;2.程序运行前的注册;3.实现sync.Once功能;4.其他; init函数的主要特点：1.init函">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://www.gravatar.com/avatar/28eb65472702b16068b3d26b1a929175?s=160">
+<meta property="og:updated_time" content="2019-05-11T05:51:35.314Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="理解golang的init函数">
+<meta name="twitter:description" content="大家都知道golang里的main函数是程序的入口函数，main函数返回后，程序也就结束了。golang还有另外一个特殊的函数init函数，先于main函数执行，实现包级别的一些初始化操作，今天我们就深入介绍下init的特性。 init函数的主要作用：1.初始化不能采用初始化表达式初始化的变量;2.程序运行前的注册;3.实现sync.Once功能;4.其他; init函数的主要特点：1.init函">
+<meta name="twitter:image" content="https://www.gravatar.com/avatar/28eb65472702b16068b3d26b1a929175?s=160">
+<link rel="stylesheet" href="/fonts.b9b22ef890c930ac7a13.css">
+<link rel="stylesheet" href="/styles.942c2aa7be6bc74cfb59.css">
+<link rel="stylesheet" href="/theme.cfe159438b78edc19bbf.css">
+<script src="/config.6242c146530b0367f932.js"></script>
+</head>
+<body>
+<is-d2a57d></is-d2a57d>
+<script src="/runtime.a5dd35324ddfd942bef1.js"></script>
+<script src="/polyfills.bd3fb034406e30e3b5dc.js"></script>
+<script src="/main.8f14c2dee0d43c5f5861.en.js"></script></body>
+</html>
