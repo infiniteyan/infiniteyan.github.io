@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+<meta charset="utf-8">
+<title>基于UDP的套接字通信 - 颜</title>
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<link rel="canonical" href="http://yoursite.com/post/基于UDP的套接字通信/">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="translucent">
+<meta name="description" content="UDP套接口是无连接的、不可靠的数据报协议；既然他不可靠为什么还要用呢？其一：当应用程序使用广播或多播时只能使用UDP协议；其二：由于他是无连接的，所以速度快。因为UDP套接口是无连接的，如果一方的数据报丢失，那另一方将无限等待，解决办法是设置一个超时。建立UDP套接口时socket函数的第二个参数应该是SOCK_DGRAM，说明是建立一个UDP套接口；由于UDP是无连接的，所以服务器端并不需要l">
+<meta property="og:type" content="website">
+<meta property="og:title" content="基于UDP的套接字通信">
+<meta property="og:url" content="http://yoursite.com/post/基于UDP的套接字通信/index.html">
+<meta property="og:site_name" content="颜">
+<meta property="og:description" content="UDP套接口是无连接的、不可靠的数据报协议；既然他不可靠为什么还要用呢？其一：当应用程序使用广播或多播时只能使用UDP协议；其二：由于他是无连接的，所以速度快。因为UDP套接口是无连接的，如果一方的数据报丢失，那另一方将无限等待，解决办法是设置一个超时。建立UDP套接口时socket函数的第二个参数应该是SOCK_DGRAM，说明是建立一个UDP套接口；由于UDP是无连接的，所以服务器端并不需要l">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://www.gravatar.com/avatar/28eb65472702b16068b3d26b1a929175?s=160">
+<meta property="og:updated_time" content="2019-06-29T08:21:32.022Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="基于UDP的套接字通信">
+<meta name="twitter:description" content="UDP套接口是无连接的、不可靠的数据报协议；既然他不可靠为什么还要用呢？其一：当应用程序使用广播或多播时只能使用UDP协议；其二：由于他是无连接的，所以速度快。因为UDP套接口是无连接的，如果一方的数据报丢失，那另一方将无限等待，解决办法是设置一个超时。建立UDP套接口时socket函数的第二个参数应该是SOCK_DGRAM，说明是建立一个UDP套接口；由于UDP是无连接的，所以服务器端并不需要l">
+<meta name="twitter:image" content="https://www.gravatar.com/avatar/28eb65472702b16068b3d26b1a929175?s=160">
+<link rel="stylesheet" href="/fonts.b9b22ef890c930ac7a13.css">
+<link rel="stylesheet" href="/styles.942c2aa7be6bc74cfb59.css">
+<link rel="stylesheet" href="/theme.cfe159438b78edc19bbf.css">
+<script src="/config.d1b5de31fb88f31c2905.js"></script>
+</head>
+<body>
+<is-d2a57d></is-d2a57d>
+<script src="/runtime.a5dd35324ddfd942bef1.js"></script>
+<script src="/polyfills.bd3fb034406e30e3b5dc.js"></script>
+<script src="/main.8f14c2dee0d43c5f5861.en.js"></script></body>
+</html>
