@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+<meta charset="utf-8">
+<title>右值引用、move、emplace、emplace_back原理和用法详解 - 颜</title>
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<link rel="canonical" href="http://yoursite.com/post/右值引用、move、emplace、emplace-back原理和用法详解/">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="translucent">
+<meta name="description" content="右值引用C++11引入了右值引用，用&amp;amp;&amp;amp;表示右值引用，如int &amp;amp;&amp;amp;a = add(1,2)。先了解下什么是左值和右值，简单的说，下面的表达式：1int a = 10; 等号“=”左边的a为左值，右边的10为右值；当然这只是表面的定义，进一步说，左值是有固定的内存地址，&amp;amp;a即左值的地址，我们可以把&amp;amp;a保存起来，后续通过&amp;amp;a这个地址读取、修改a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="右值引用、move、emplace、emplace_back原理和用法详解">
+<meta property="og:url" content="http://yoursite.com/post/右值引用、move、emplace、emplace-back原理和用法详解/index.html">
+<meta property="og:site_name" content="颜">
+<meta property="og:description" content="右值引用C++11引入了右值引用，用&amp;amp;&amp;amp;表示右值引用，如int &amp;amp;&amp;amp;a = add(1,2)。先了解下什么是左值和右值，简单的说，下面的表达式：1int a = 10; 等号“=”左边的a为左值，右边的10为右值；当然这只是表面的定义，进一步说，左值是有固定的内存地址，&amp;amp;a即左值的地址，我们可以把&amp;amp;a保存起来，后续通过&amp;amp;a这个地址读取、修改a">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://www.gravatar.com/avatar/28eb65472702b16068b3d26b1a929175?s=160">
+<meta property="og:updated_time" content="2020-03-23T13:51:47.553Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="右值引用、move、emplace、emplace_back原理和用法详解">
+<meta name="twitter:description" content="右值引用C++11引入了右值引用，用&amp;amp;&amp;amp;表示右值引用，如int &amp;amp;&amp;amp;a = add(1,2)。先了解下什么是左值和右值，简单的说，下面的表达式：1int a = 10; 等号“=”左边的a为左值，右边的10为右值；当然这只是表面的定义，进一步说，左值是有固定的内存地址，&amp;amp;a即左值的地址，我们可以把&amp;amp;a保存起来，后续通过&amp;amp;a这个地址读取、修改a">
+<meta name="twitter:image" content="https://www.gravatar.com/avatar/28eb65472702b16068b3d26b1a929175?s=160">
+<link rel="stylesheet" href="/fonts.b9b22ef890c930ac7a13.css">
+<link rel="stylesheet" href="/styles.942c2aa7be6bc74cfb59.css">
+<link rel="stylesheet" href="/theme.cfe159438b78edc19bbf.css">
+<script src="/config.d157ef97ad98e1d226c8.js"></script>
+</head>
+<body>
+<is-d2a57d></is-d2a57d>
+<script src="/runtime.a5dd35324ddfd942bef1.js"></script>
+<script src="/polyfills.bd3fb034406e30e3b5dc.js"></script>
+<script src="/main.8f14c2dee0d43c5f5861.en.js"></script></body>
+</html>
