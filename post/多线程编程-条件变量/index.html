@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+<meta charset="utf-8">
+<title>多线程编程-条件变量 - 颜</title>
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+<link rel="canonical" href="http://yoursite.com/post/多线程编程-条件变量/">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="translucent">
+<meta name="description" content="互斥锁std::mutex是一种最常见的线程间同步的手段，但是在有些情况下不太高效。 假设想实现一个简单的消费者生产者模型，一个线程往队列中放入数据，一个线程往队列中取数据，取数据前需要判断一下队列中确实有数据，由于这个队列是线程间共享的，所以，需要使用互斥锁进行保护，一个线程在往队列添加数据的时候，另一个线程不能取，反之亦然。用互斥锁实现如下：12345678910111213141516171">
+<meta property="og:type" content="website">
+<meta property="og:title" content="多线程编程-条件变量">
+<meta property="og:url" content="http://yoursite.com/post/多线程编程-条件变量/index.html">
+<meta property="og:site_name" content="颜">
+<meta property="og:description" content="互斥锁std::mutex是一种最常见的线程间同步的手段，但是在有些情况下不太高效。 假设想实现一个简单的消费者生产者模型，一个线程往队列中放入数据，一个线程往队列中取数据，取数据前需要判断一下队列中确实有数据，由于这个队列是线程间共享的，所以，需要使用互斥锁进行保护，一个线程在往队列添加数据的时候，另一个线程不能取，反之亦然。用互斥锁实现如下：12345678910111213141516171">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://www.gravatar.com/avatar/28eb65472702b16068b3d26b1a929175?s=160">
+<meta property="og:updated_time" content="2020-03-25T12:49:44.419Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="多线程编程-条件变量">
+<meta name="twitter:description" content="互斥锁std::mutex是一种最常见的线程间同步的手段，但是在有些情况下不太高效。 假设想实现一个简单的消费者生产者模型，一个线程往队列中放入数据，一个线程往队列中取数据，取数据前需要判断一下队列中确实有数据，由于这个队列是线程间共享的，所以，需要使用互斥锁进行保护，一个线程在往队列添加数据的时候，另一个线程不能取，反之亦然。用互斥锁实现如下：12345678910111213141516171">
+<meta name="twitter:image" content="https://www.gravatar.com/avatar/28eb65472702b16068b3d26b1a929175?s=160">
+<link rel="stylesheet" href="/fonts.b9b22ef890c930ac7a13.css">
+<link rel="stylesheet" href="/styles.942c2aa7be6bc74cfb59.css">
+<link rel="stylesheet" href="/theme.cfe159438b78edc19bbf.css">
+<script src="/config.f1e2fa24e83e1063cb41.js"></script>
+</head>
+<body>
+<is-d2a57d></is-d2a57d>
+<script src="/runtime.a5dd35324ddfd942bef1.js"></script>
+<script src="/polyfills.bd3fb034406e30e3b5dc.js"></script>
+<script src="/main.8f14c2dee0d43c5f5861.en.js"></script></body>
+</html>
